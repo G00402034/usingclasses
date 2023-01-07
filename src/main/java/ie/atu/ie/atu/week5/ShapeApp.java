@@ -6,10 +6,27 @@ public class ShapeApp {
         System.out.println("PLease enter the length of the Rectangle");
         Scanner input = new Scanner(System.in);
         double length = input.nextDouble();
-        System.out.println("You entered : " + length);
+        //created first instance of rectangle
+        Rectangle shapeRect = new Rectangle();
+        shapeRect.setLength(length);
+        System.out.println("You entered : " + shapeRect.getLength());
+
 
         System.out.println("PLease enter the width of the Rectangle");
         double width = input.nextDouble();
-        System.out.println("You entered : " + width);
+        shapeRect.setWidth(width);
+        System.out.println("You entered : " + shapeRect.getWidth());
+        //created second instance of rectangle
+        Rectangle shapeRect2 = new Rectangle();
+        System.out.println("PLease enter the second length of the Rectangle");
+        double length2 = input.nextDouble();
+        shapeRect.setLength(length2);
+        System.out.println("You entered : " + shapeRect2.getLength());
+
+
+        System.out.println("PLease enter the second width of the Rectangle");
+        double width2 = input.nextDouble();
+        shapeRect.setWidth(width2);
+        System.out.println("You entered : " + shapeRect2.getWidth());
     }
 }
